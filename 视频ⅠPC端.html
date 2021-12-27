@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>海底两万里</title>
+	<link rel="shortcut icon" href="images/标签图片.jpg" />
+	
+
+  
+    
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		@font-face {
+  font-family: 'norwester';   /*字体名称*/
+  src: url('字体/norwester.ttf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '本墨锵黑';   /*字体名称*/
+  src: url('字体/本墨锵黑.ttf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '液晶体';   /*字体名称*/
+  src: url('字体/LiquidCrystal-Bold.otf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '英文写信字体';   /*字体名称*/
+  src: url('字体/ldpretty.ttf');  
+       /*字体源文件*/
+    }
+    
+		a{
+        	color: white;
+        	text-decoration: none;
+        }
+        nav {
+			width:100%;
+			height: 40px;
+			z-index: 50;
+			font-family:本墨锵黑;
+			font-size: 20px;
+			font-color: white;
+			text-align: center;
+			position: fixed;
+			top:0;
+			left: 0;
+			
+			padding-top: 5px;
+			background-image: url('images/背景.jpg');
+			
+			}
+			nav:hover{
+				height: 200px;
+			}
+
+		li {
+			text-align: center;
+			display: inline-block;
+			line-height: 40px;
+			width: 200px;
+			height: 35px;
+			
+
+		}
+		#menu>li {
+			display: inline-block;
+			position: relative;
+			min-width: 150px;
+		}
+
+		li:hover {
+			background-color: gray;
+			border-radius: 15px;
+		}
+		#sub {
+			display: none;
+			position: absolute;
+			font-size: 15px;
+		}
+		nav:hover #sub {
+			display: block;
+		}
+
+		#tb{/*图标*/
+			
+			line-height: 50px;
+			text-align: center;
+			position: fixed;
+			left: 20px;
+			top: 0px;
+			height: 40px;
+			z-index: 80;
+			font-family: 本墨锵黑;
+			font-size: 30px;
+
+
+
+		}
+		#tb1{
+			
+			line-height: 50px;
+			text-align: center;
+			position: fixed;
+			left: 125px;
+			top: -10px;
+			
+			height: 40px;
+			z-index: 90;
+			font-family: 本墨锵黑;
+			font-size: 30px;
+		}
+        #wz{
+	background-color: rgb(102, 255, 204);
+	border-radius: 40px;
+	position: fixed;
+	text-align: center;
+	line-height: 50px;
+	width: 280px;
+	height: 40px;
+	top: 50px;
+	left: 0px;
+	z-index: 60;
+	font-family: 本墨锵黑;
+	font-size: 20px;
+}
+
+#wz a:hover{
+	color: gray;
+}
+
+#dl1{
+	background-color: rgb(102, 255, 204);
+	border-radius: 40px;
+	position: fixed;
+	text-align: center;
+	line-height: 50px;
+	width: 150px;
+	height: 40px;
+	top: 0px;
+	right: 0px;
+	z-index: 60;
+	font-family: 本墨锵黑;
+	font-size: 20px;
+}
+
+#dl1 a:hover{
+	color: gray;
+}
+
+
+
+
+
+
+	#img{
+
+        	position: fixed;
+        	left: 0px;
+        	 z-index: -2;
+        	 top: 0px;
+        	 
+        	 
+        }
+
+
+
+		#img1{
+			width: 100%;
+			position: fixed;
+			left: 0px;
+        	 z-index: -2;
+        	 top: 0px;
+        	 transition: all 1s linear;
+        	 opacity: 0;
+
+        	 
+		}
+
+		#img1:hover{
+			opacity: 1;
+
+
+
+		}
+
+#video{
+position: absolute;
+top: 130px;
+left: 320px;
+
+}
+#yx{
+	background-image: url('images/背景.jpg');
+	border-radius: 40px;
+	position: absolute;
+	text-align: center;
+	padding-top: 20px;
+	top: 60px;
+	width: 350px;
+	height: 60px;
+	left: 580px;
+	font-family: 本墨锵黑;
+	font-size: 40px;
+	transition: all 0.5s;
+}
+#yx:hover{
+	transform: scale(1.1);
+}
+
+</style>
+</head>
+<body>
+	<div id="yc"><!--隐藏PC端css-->
+	<div id="img">
+		<img src="images/海底视频Ⅰ页背景.jpg" width="100%" height="100%">
+	</div>
+	<div id="img1">
+		<img src="images/海底视频Ⅰ页背景2.jpg" width="100%" height="100%">
+	</div>
+	<nav><!--pc端导航栏-->
+		
+		<ul id="menu">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="">深度</a>                      
+             <ul id="sub">
+				<li><a href="">1000米</a></li>
+				<li><a href="">2000米</a></li>
+				<li><a href="">3000米</a></li>
+				<li><a href="">4000米</a></li>
+			  </ul>
+			</li>			
+			<li><a href="">小问答</a>           
+              <ul id="sub">
+				<li><a href="问题1.html">问题1</a></li>
+				<li><a href="问题2.html">问题2</a></li>
+				<li><a href="问题3.html">问题3</a></li>
+			  </ul>
+			</li>
+			<li><a href="">视频</a>                   
+				<ul id="sub">
+				<li><a href="">视频Ⅰ</a></li>
+				<li><a href="">视频Ⅱ</a></li>
+
+			  </ul>
+			</li>
+			<li><a href="海洋保护.html">海洋环境保护小贴士</a></li> 
+
+		</ul>
+	</nav>
+	<div id="tb1"><a href=""><img src=""></a></div>
+	<div id="tb"><a href="">海底两万里</a></div>
+	<div id="wz"><a href="index.html">首页</a><font color="white">丨当前位置：</font><a href="视频ⅠPC端.html">视频Ⅰ</a></div>
+	<div id="dl1"><a href="登录和注册（响应式）.html">登录</a><font color="white">丨</font><a href="登录和注册（响应式）.html">注册</a></div>
+	<a href=""><div id="yx"><font color="white">探索海底两万里</font></div></a>	
+	<div id="video"><video src="images/视频Ⅰ.mp4" controls="controls" width="900px" height="445px"></video></div>
+	</div>
+
+
+</body>
+</html>
